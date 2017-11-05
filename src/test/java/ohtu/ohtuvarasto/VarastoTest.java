@@ -126,11 +126,9 @@ public class VarastoTest {
         double saatuMaara = varasto.otaVarastosta(-8);
 
         assertEquals(0, saatuMaara, vertailuTarkkuus);
-
         assertEquals(8, varasto.getSaldo(), vertailuTarkkuus);
         assertEquals(10, varasto.getTilavuus(), vertailuTarkkuus);
         assertEquals(2, varasto.paljonkoMahtuu(), vertailuTarkkuus);
-
     }
     
     
