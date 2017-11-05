@@ -40,3 +40,12 @@ jar {
 // testauskattavuus
 apply plugin: "jacoco" 
 
+
+// automaattinen testikattavuuden tutkinta codecov 
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled true
+    }
+}
+
