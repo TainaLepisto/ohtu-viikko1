@@ -12,6 +12,8 @@ apply plugin: 'java'
 // Apply the application plugin to add support for building an application
 apply plugin: 'application'
 
+
+
 // In this section you declare where to find the dependencies of your project
 repositories {
     // Use jcenter for resolving your dependencies.
@@ -38,10 +40,10 @@ jar {
 }
 
 // testauskattavuus
-apply plugin: "jacoco" 
+apply plugin: "jacoco"
 
 
-// automaattinen testikattavuuden tutkinta codecov 
+// automaattinen testikattavuuden tutkinta codecov
 jacocoTestReport {
     reports {
         xml.enabled true
@@ -55,3 +57,6 @@ jacocoTestReport {
     }
 }
 
+
+// chechstyle käyttöön
+apply plugin: 'checkstyle'
